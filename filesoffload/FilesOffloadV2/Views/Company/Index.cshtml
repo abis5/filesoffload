@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Users</title>
+</head>
+<body>
+    <div id="appCompany">
+        <p v-if="errors.length">
+            <b>Please correct the following error(s):</b>
+            <ul>
+                <li v-for="error in errors">{{ error }}</li>
+            </ul>
+        </p>
+
+        <p>
+            <label for="name">Name:* </label>
+            <input type="text" name="name" id="name" v-model="Company.Name">
+        </p>
+
+        <p>
+            <label for="age">Email:* </label>
+            <input type="email" name="email" id="email" v-model="Company.Email">
+        </p>
+
+        <p>
+            <label for="movie">User Type: </label>
+            <select name="userType" id="userType" v-model="Company.UserType">
+                <option selected="selected" disabled> Select </option>
+                <option>User</option>
+                <option>Attendant</option>
+                <option>Admin</option>
+            </select>
+        </p>
+
+        <p>
+            <button v-on:click="validateCompany">Save Company</button>
+        </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@2.5.11/dist/vue.js"></script>
+
+    <script src="~/Scripts/Vue/Helpers.js"></script>
+    <script src="~/Scripts/Vue/Entities/Entities.js"></script>
+
+    <script src="~/Scripts/Vue/app.js"></script>
+
+</body>
+</html>

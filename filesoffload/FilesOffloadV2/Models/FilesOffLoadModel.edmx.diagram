@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cfb7ae722b45491f935c814c08756852" Name="Diagram1">
+        <EntityTypeShape EntityType="FilesOffloadDBModel.Cabinet" Width="1.5" PointX="0.75" PointY="1" />
+        <EntityTypeShape EntityType="FilesOffloadDBModel.CabinetUser" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FilesOffloadDBModel.Company" Width="1.5" PointX="0.75" PointY="5.875" />
+        <EntityTypeShape EntityType="FilesOffloadDBModel.Department" Width="1.5" PointX="3" PointY="5.25" />
+        <EntityTypeShape EntityType="FilesOffloadDBModel.Drawer" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="FilesOffloadDBModel.File" Width="1.5" PointX="5.25" PointY="1" />
+        <EntityTypeShape EntityType="FilesOffloadDBModel.User" Width="1.5" PointX="5.25" PointY="5" />
+        <AssociationConnector Association="FilesOffloadDBModel.FK_tb_Drawer_tb_Cabinet" />
+        <AssociationConnector Association="FilesOffloadDBModel.FK_tb_Department_tb_Company" />
+        <AssociationConnector Association="FilesOffloadDBModel.FK_tb_User_tb_Department" />
+        <AssociationConnector Association="FilesOffloadDBModel.FK_tb_File_tb_Drawer" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

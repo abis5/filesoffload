@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Users</title>
+</head>
+<body>
+
+
+
+    <section class="forms">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form name="frm" method="post" enctype="multipart/form-data" action="">
+
+
+                        <div id="app">
+                            <div class="form-group">
+                                <p v-if="errors.length">
+                                    <b>Please correct the following error(s):</b>
+                                    <ul>
+                                        <li v-for="error in errors">{{ error }}</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div v-if="successMessage" style="color:green; padding:10px; border: 1px solid green">{{ successMessage }}</div>
+
+                            <!--User Section-->
+                            <!---->
+                            <div id="CompanySection" class="form-group">
+                                <div class="col-lg-9">
+                                    <div id="tab-container">
+                                        
+                                        <div id="tabs1-doc">
+                                            <table class="table table-hover table-bordered table-responsive table-condensed">
+                                                <tr >
+                                                    <th class="table-dark">Satus</th>
+                                                    <th class="table-dark">Name</th>
+                                                    <th class="table-dark">Author</th>
+                                                    <th class="table-dark">Pages</th>
+                                                    <th class="table-dark">Notes</th>
+                                                    <th class="table-dark">Update Date</th>
+                                                    <th class="table-dark">Size</th>
+                                                    <th class="table-dark">Edit</th>
+                                                    <th class="table-dark">Delete</th>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td style="line-height:55px;">Budget</td>
+                                                    <td>Administrator</td>
+                                                    <td>1</td>
+                                                    <td></td>
+                                                    <td>18-06-2017</td>
+                                                    <td>25kb</td>
+                                                    <td><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                                                    <td><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Budget</td>
+                                                    <td>Administrator</td>
+                                                    <td>1</td>
+                                                    <td></td>
+                                                    <td>18-06-2017</td>
+                                                    <td>25kb</td>
+                                                    <td><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                                                    <td><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Budget</td>
+                                                    <td>Administrator</td>
+                                                    <td>1</td>
+                                                    <td></td>
+                                                    <td>18-06-2017</td>
+                                                    <td>25kb</td>
+                                                    <td><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                                                    <td><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Budget</td>
+                                                    <td>Administrator</td>
+                                                    <td>1</td>
+                                                    <td></td>
+                                                    <td>18-06-2017</td>
+                                                    <td>25kb</td>
+                                                    <td><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                                                    <td><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Budget</td>
+                                                    <td>Administrator</td>
+                                                    <td>1</td>
+                                                    <td></td>
+                                                    <td>18-06-2017</td>
+                                                    <td>25kb</td>
+                                                    <td><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                                                    <td><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Budget</td>
+                                                    <td>Administrator</td>
+                                                    <td>1</td>
+                                                    <td></td>
+                                                    <td>18-06-2017</td>
+                                                    <td>25kb</td>
+                                                    <td><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                                                    <td><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Company Section-->
+                            <!---->
+                        </div>
+
+                    </form>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@2.5.11/dist/vue.js"></script>
+
+    <script src="~/Scripts/Vue/Helpers.js"></script>
+    <script src="~/Scripts/Vue/Entities/Entities.js"></script>
+
+    <script src="~/Scripts/Vue/app.js"></script>
+
+</body>
+</html>

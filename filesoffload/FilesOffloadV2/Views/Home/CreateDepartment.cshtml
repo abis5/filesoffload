@@ -1,0 +1,77 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Users</title>
+</head>
+<body>
+
+
+
+    <section class="forms">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form name="frm" method="post" enctype="multipart/form-data" action="">
+
+
+                        <div id="app">
+                            <div class="form-group">
+                                <p v-if="errors.length">
+                                    <b>Please correct the following error(s):</b>
+                                    <ul>
+                                        <li v-for="error in errors">{{ error }}</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div v-if="successMessage" style="color:green; padding:10px; border: 1px solid green">{{ successMessage }}</div>
+
+                            <!--User Section-->
+                            <!---->
+                            <div id="DepartmentSection" class="form-group">
+                                <div>
+                                    <p>
+                                        <label for="name">Name:*</label>
+                                        <input class="form-control inputcontent" placeholder="Deparment Name" type="text" v-model="Department.Name">
+
+                                    </p>
+
+                                    <p>
+
+                                        <label for="Description">Description:*</label>
+                                        <input class="form-control inputcontent" placeholder="Department Description" type="text" v-model="Department.Description">
+                                    </p>
+
+                                    <p>
+                                        <input v-on:click="validateDepartment" type="submit" value="Save Department" name="Save Department" class="btn btn-success searchbutton" />
+                                    </p>
+                                </div>
+
+                            </div>
+                            <!--End Department Section-->
+                            <!---->
+                        </div>
+
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@2.5.11/dist/vue.js"></script>
+
+    <script src="~/Scripts/Vue/Helpers.js"></script>
+    <script src="~/Scripts/Vue/Entities/Entities.js"></script>
+
+    <script src="~/Scripts/Vue/app.js"></script>
+
+</body>
+</html>

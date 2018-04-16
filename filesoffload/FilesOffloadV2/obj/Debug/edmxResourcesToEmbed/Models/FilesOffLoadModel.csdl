@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FilesOffloadDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="FilesOffloadDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cabinets" EntityType="FilesOffloadDBModel.Cabinet" />
+    <EntitySet Name="CabinetUsers" EntityType="FilesOffloadDBModel.CabinetUser" />
+    <EntitySet Name="Companies" EntityType="FilesOffloadDBModel.Company" />
+    <EntitySet Name="Departments" EntityType="FilesOffloadDBModel.Department" />
+    <EntitySet Name="Drawers" EntityType="FilesOffloadDBModel.Drawer" />
+    <EntitySet Name="Files" EntityType="FilesOffloadDBModel.File" />
+    <EntitySet Name="Users" EntityType="FilesOffloadDBModel.User" />
+    <AssociationSet Name="FK_tb_Drawer_tb_Cabinet" Association="FilesOffloadDBModel.FK_tb_Drawer_tb_Cabinet">
+      <End Role="Cabinet" EntitySet="Cabinets" />
+      <End Role="Drawer" EntitySet="Drawers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Department_tb_Company" Association="FilesOffloadDBModel.FK_tb_Department_tb_Company">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="Department" EntitySet="Departments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_User_tb_Department" Association="FilesOffloadDBModel.FK_tb_User_tb_Department">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_File_tb_Drawer" Association="FilesOffloadDBModel.FK_tb_File_tb_Drawer">
+      <End Role="Drawer" EntitySet="Drawers" />
+      <End Role="File" EntitySet="Files" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Cabinet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CabinetCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DepartmentId" Type="Int32" />
+    <Property Name="NumberOfDrawers" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Drawers" Relationship="FilesOffloadDBModel.FK_tb_Drawer_tb_Cabinet" FromRole="Cabinet" ToRole="Drawer" />
+  </EntityType>
+  <EntityType Name="CabinetUser">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="CabinetId" Type="Int32" />
+    <Property Name="UserId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Departments" Relationship="FilesOffloadDBModel.FK_tb_Department_tb_Company" FromRole="Company" ToRole="Department" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyId" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Company" Relationship="FilesOffloadDBModel.FK_tb_Department_tb_Company" FromRole="Department" ToRole="Company" />
+    <NavigationProperty Name="Users" Relationship="FilesOffloadDBModel.FK_tb_User_tb_Department" FromRole="Department" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Drawer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DrawerCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CabinetId" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Cabinet" Relationship="FilesOffloadDBModel.FK_tb_Drawer_tb_Cabinet" FromRole="Drawer" ToRole="Cabinet" />
+    <NavigationProperty Name="Files" Relationship="FilesOffloadDBModel.FK_tb_File_tb_Drawer" FromRole="Drawer" ToRole="File" />
+  </EntityType>
+  <EntityType Name="File">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FileCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DrawerId" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Drawer" Relationship="FilesOffloadDBModel.FK_tb_File_tb_Drawer" FromRole="File" ToRole="Drawer" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserType" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DepartmentId" Type="Int32" />
+    <Property Name="Picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Department" Relationship="FilesOffloadDBModel.FK_tb_User_tb_Department" FromRole="User" ToRole="Department" />
+  </EntityType>
+  <Association Name="FK_tb_Drawer_tb_Cabinet">
+    <End Type="FilesOffloadDBModel.Cabinet" Role="Cabinet" Multiplicity="0..1" />
+    <End Type="FilesOffloadDBModel.Drawer" Role="Drawer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cabinet">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Drawer">
+        <PropertyRef Name="CabinetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Department_tb_Company">
+    <End Type="FilesOffloadDBModel.Company" Role="Company" Multiplicity="0..1" />
+    <End Type="FilesOffloadDBModel.Department" Role="Department" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Department">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_User_tb_Department">
+    <End Type="FilesOffloadDBModel.Department" Role="Department" Multiplicity="0..1" />
+    <End Type="FilesOffloadDBModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="DepartmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_File_tb_Drawer">
+    <End Type="FilesOffloadDBModel.Drawer" Role="Drawer" Multiplicity="0..1" />
+    <End Type="FilesOffloadDBModel.File" Role="File" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Drawer">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="File">
+        <PropertyRef Name="DrawerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

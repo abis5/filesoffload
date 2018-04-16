@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Users</title>
+</head>
+<body>
+
+
+
+    <section class="forms">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form name="frm" method="post" enctype="multipart/form-data" action="">
+                        @*<caption>
+                                Search (+Wildcard Characters Allowed)
+                            </caption>
+                            <div class="form-group">
+                                <label for="Name">File Content</label>
+                                <textarea class="form-control" rows="5" cols="5" placeholder="Address"></textarea>
+                            </div>
+                            <div class="form-group col-lg-offset-3 ">
+                                <input type="submit" name="" value="Search" class="btn btn-success searchbutton" />
+                                <input type="submit" value="Reset" name="Reset" class="btn btn-success searchbutton" />
+                                <input type="submit" value="Save Search" name="Save Search" class="btn btn-success searchbutton" />
+                            </div>*@
+
+                        <div id="app">
+                            <div class="form-group">
+                                <p v-if="errors.length">
+                                    <b>Please correct the following error(s):</b>
+                                    <ul>
+                                        <li v-for="error in errors">{{ error }}</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div v-if="successMessage" style="color:green; padding:10px; border: 1px solid green">{{ successMessage }}</div>
+
+                            <!--Company Section-->
+                            <!---->
+                            <div id="CompanySection" class="form-group">
+                                <p>
+                                    <label for="name">Name:*</label>
+                                    <input class="form-control inputcontent" placeholder="Company Name" type="text" v-model="Company.Name">
+
+                                </p>
+
+                                <p>
+
+                                    <label for="Description">Description:*</label>
+                                    <input class="form-control inputcontent" placeholder="Company Description" type="text" v-model="Company.Description">
+                                </p>
+
+                                <p>
+                                    <input v-on:click="validateCompany" type="submit" value="Save Company" name="Save Company" class="btn btn-success searchbutton" />
+                                </p>
+                            </div>
+                            <!--End Company Section-->
+                            <!---->
+                            <!--Department Section-->
+                            <!---->
+                            <div id="DepartmentSection">
+                                <p>
+
+                                    <label for="name">Name:*</label>
+                                    <input class="form-control inputcontent" placeholder="Department Name" type="text" v-model="Department.Name">
+
+                                </p>
+
+                                <p>
+                                    <label for="Description">Description:* </label>
+                                    <input class="form-control inputcontent" placeholder="Department Description" type="text" v-model="Department.Description">
+
+                                </p>
+
+                                <p>
+                                    <input v-on:click="validateDepartment" type="submit" value="Save Department" name="Save Department" class="btn btn-success searchbutton" />
+
+                                </p>
+                            </div>
+
+                            <!--End Deparment Section-->
+                            <!---->
+
+
+                        </div>
+
+                    </form>
+                </div>
+                @*<div class="col-md-4">
+
+                        <div class="form-group">
+                            <label for="Name">File Content</label>
+                            <input class="form-control inputcontent" placeholder="Address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Name">File Keywords</label>
+                            <input class="form-control inputcontent" placeholder="Address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Name">User Id</label>
+                            <input class="form-control inputcontent" placeholder="Address">
+                        </div>
+                        <div class="form-group">
+
+                            To  &nbsp;&nbsp;<input class="form-control inputcontent" type="date" placeholder="date">
+                            From&nbsp;&nbsp; <input class="form-control inputcontent" type="date" placeholder="date">
+                        </div>
+
+
+
+
+
+                    </div>*@
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@2.5.11/dist/vue.js"></script>
+
+    <script src="~/Scripts/Vue/Helpers.js"></script>
+    <script src="~/Scripts/Vue/Entities/Entities.js"></script>
+
+    <script src="~/Scripts/Vue/app.js"></script>
+
+</body>
+</html>

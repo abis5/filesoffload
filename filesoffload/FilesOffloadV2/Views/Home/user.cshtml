@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Users</title>
+</head>
+<body>
+
+
+
+    <section class="forms">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form name="frm" method="post" enctype="multipart/form-data" action="">
+
+
+                        <div id="app" class="col-md-12">
+                            <div class="form-group">
+                                <p v-if="errors.length">
+                                    <b>Please correct the following error(s):</b>
+                                    <ul>
+                                        <li v-for="error in errors">{{ error }}</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div v-if="successMessage" style="color:green; padding:10px; border: 1px solid green">{{ successMessage }}</div>
+
+                            <!--User Section-->
+                            <!---->
+                            <div id="CompanySection" class="form-group">
+
+                                <div class="col-md-12">
+                                    <div class="pie-chart-example card">
+                                        <div class="card-close">
+                                            <div class="dropdown">
+                                                <button type="button" id="closeCard7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
+                                                <div aria-labelledby="closeCard7" class="dropdown-menu dropdown-menu-right has-shadow">
+                                                    <a href="#" class="dropdown-item "> <i class="fa fa-remove"></i>Delete</a>
+                                                    <a href="#" class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a>
+                                                    <a href="#" class="dropdown-item "> <i class="fa fa-minus-circle"></i>bar</a>
+                                                    <a href="#" class="dropdown-item edit"> <i class="fa fa-gear"></i>Confiscation</a>
+                                                    <a href="#" class="dropdown-item edit"> <i class="fa fa-key"></i>Key</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-header d-flex align-items-center">
+                                            <h3 class="h4">Mujtaba Ali / Finance Manager GR 10</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            @*<canvas id="doughnutChartExample"> </canvas>*@
+                                            <div class="col-md-8" style="float:left;">
+                                                <p>
+                                                    <label for="name" class="font-weight-bold">Joined Company : </label>
+                                                    <label v-model="Department.Name">12/1/2009</label>
+
+                                                </p>
+
+                                                <p>
+                                                    <label for="Description" class="font-weight-bold">Cabinets : </label>
+                                                    <label v-model="Department.Description"> 4</label>
+                                                </p>
+                                                <p>
+                                                    <label for="name" class="font-weight-bold">Key Sharing</label>
+                                                    <label v-model="Department.Name"> 1</label>
+                                                </p>
+
+                                                <p>
+                                                    <label for="Description" class="font-weight-bold">Last time visited</label>
+                                                    <label v-model="Department.Description">12/1/2018</label>
+                                                </p>
+                                                <p>
+                                                    <label for="name" class="font-weight-bold">Last cabinet visited</label>
+                                                    <label v-model="Department.Name"> Cabinet 2</label>
+</p>
+
+                                                <p>
+                                                    <label for="Description" class="font-weight-bold">Average per day visits</label>
+                                                    <label v-model="Department.Description">4</label>
+</p>
+                                                <p>
+                                                    <label for="name" class="font-weight-bold">Max per day visits</label>
+                                                    <label  v-model="Department.Name">7</label>
+                                                </p>
+
+                                                <p>
+                                                    <label for="Description" class="font-weight-bold">Min per day visits</label>
+                                                    <label v-model="Department.Description">2</label>
+                                                </p>
+
+                                                @*<p>
+                                                        <input v-on:click="validateDepartment" type="submit" value="Save Department" name="Save Department" class="btn btn-success searchbutton" />
+
+                                                    </p>*@
+                                            </div>
+                                            <div class="col-md-4" style="float:right;">
+                                                <p>
+                                                    <div class="avatar">
+                                                        <img src="~/Content/images/Quaid.jpg" alt="..." class="img-fluid rounded-circle">
+                                                    </div>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--End Company Section-->
+                                <!---->
+
+                                <div class="col-md-8">
+                                </div>
+                                <div class="col-md-4">
+                                </div>
+
+                            </div>
+
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@2.5.11/dist/vue.js"></script>
+
+    <script src="~/Scripts/Vue/Helpers.js"></script>
+    <script src="~/Scripts/Vue/Entities/Entities.js"></script>
+
+    <script src="~/Scripts/Vue/app.js"></script>
+
+</body>
+</html>

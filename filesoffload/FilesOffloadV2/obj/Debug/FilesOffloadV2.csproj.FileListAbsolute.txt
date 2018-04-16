@@ -1,0 +1,71 @@
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\FilesOffloadV2.dll.config
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\FilesOffloadV2.dll
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\FilesOffloadV2.pdb
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\System.Web.Helpers.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\System.Web.Mvc.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\System.Web.Optimization.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\System.Web.Razor.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\System.Web.WebPages.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\System.Web.WebPages.Deployment.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\System.Web.WebPages.Razor.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\Antlr3.Runtime.pdb
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\Newtonsoft.Json.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\System.Net.Http.Formatting.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\System.Web.Http.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\System.Web.Http.WebHost.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\EntityFramework.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\EntityFramework.SqlServer.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.AspNet.Identity.Core.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.Owin.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.Owin.Security.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.Owin.Security.Facebook.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.Owin.Security.Cookies.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.Owin.Security.Google.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.Owin.Security.Twitter.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\obj\Debug\FilesOffloadV2.csprojResolveAssemblyReference.cache
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\obj\Debug\FilesOffloadV2.dll
+F:\Projects\IVS\FilesOffloadV2\FilesOffloadV2\obj\Debug\FilesOffloadV2.pdb
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\FilesOffloadV2.dll.config
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\FilesOffloadV2.dll
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\FilesOffloadV2.pdb
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\System.Web.Helpers.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\System.Web.Mvc.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\System.Web.Optimization.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\System.Web.Razor.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\System.Web.WebPages.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\System.Web.WebPages.Deployment.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\System.Web.WebPages.Razor.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\Antlr3.Runtime.pdb
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\Newtonsoft.Json.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\System.Net.Http.Formatting.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\System.Web.Http.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\System.Web.Http.WebHost.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\EntityFramework.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\EntityFramework.SqlServer.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.Owin.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.Owin.Security.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.Owin.Security.Google.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\obj\Debug\FilesOffloadV2.csprojResolveAssemblyReference.cache
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\obj\Debug\FilesOffloadV2.csproj.CoreCompileInputs.cache
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\obj\Debug\FilesOffloadV2.dll
+C:\Projects\filesOffload Code + Db\FilesOffloadV2\FilesOffloadV2\FilesOffloadV2\obj\Debug\FilesOffloadV2.pdb
+C:\Projects\FilesOffloadV2\FilesOffloadV2\bin\FilesOffloadV2.dll.config
+C:\Projects\FilesOffloadV2\FilesOffloadV2\bin\FilesOffloadV2.dll
+C:\Projects\FilesOffloadV2\FilesOffloadV2\bin\FilesOffloadV2.pdb
+C:\Projects\FilesOffloadV2\FilesOffloadV2\obj\Debug\FilesOffloadV2.csproj.CoreCompileInputs.cache
+C:\Projects\FilesOffloadV2\FilesOffloadV2\obj\Debug\FilesOffloadV2.dll
+C:\Projects\FilesOffloadV2\FilesOffloadV2\obj\Debug\FilesOffloadV2.pdb

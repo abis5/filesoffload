@@ -1,0 +1,20 @@
+﻿@model IEnumerable<IVS.FilesOffload.VM.CompanyVM>
+
+@{
+    ViewBag.Title = "Companies";
+}
+
+@if (Model == null || Model.Count() < 0)
+{
+    <p>No record found.</p>
+}
+else
+{
+    foreach (var c in Model) {
+         <div>
+             <h3>@c.Name</h3>
+             @c.Description
+        
+         </div>
+     }
+}
